@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Taco Cloud</title>
+	<link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+   <div>
+   <table>
+      <tr> 
+         <td> id </td>
+         <td> name </td>
+         <td> type> </td>
+      </tr>
+      <tr th:each= "i: ${list}">
+          <td>> [[${i.id}}]] </td>
+          <td>> [[${i.name}}]] </td>
+          <td>> [[${i.type}}]] </td>
+
+      </tr>
+   </table>
+   </div>
+</body>
+</html>
